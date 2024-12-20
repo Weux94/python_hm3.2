@@ -1,29 +1,24 @@
-# Один елемент
+# # Один елемент
 
 my_list = [1]
-result = []
 if my_list:
-    result.append(my_list.pop())
-    result.extend(my_list)
+    num = my_list.pop()
+    my_list.insert(0, num)
 
-print(result)
+print(my_list)
+# # декілька елементів
 
-# декілька елементів
-
-my_list = [1, 2, 3]
-result = []
+my_list = [1, 3, 4, 5, 6]
 if my_list:
-    result.append(my_list.pop())
-    result.extend(my_list)
+    num = my_list.pop()
+    my_list.insert(0, num)
 
-print(result)
-
-# нема елементів
+print(my_list)
+# # нема елементів
 
 my_list = []
-result = []
 if my_list:
-    result.append(my_list.pop())
-    result.extend(my_list)
+    num = my_list.pop()
+    my_list.insert(0, num)
 
-print(result)
+print(my_list)
